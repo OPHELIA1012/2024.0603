@@ -88,7 +88,18 @@ function preload(){  //我的圖片檔
         image(dogImg,partB.x-75, partB.y-75,150,150)  //右邊肩膀
       pop()
        
-       
+    }
+    // eyes
+    partA = pose.keypoints[1];
+    partB = pose.keypoints[2];
+    if (partA.score > 0.1 && partB.score > 0.1) {
+    push()
+          image(dogImg,partA.x-75, partA.y-75,150,150)  //左邊肩膀
+          image(dogImg,partB.x-75, partB.y-75,150,150)  //右邊肩膀
+    pop()
+         
+     
+    }
       }
       // hip to hip
       partA = pose.keypoints[11];
@@ -120,7 +131,8 @@ function preload(){  //我的圖片檔
         }
       }
     }
-  }
+  
+
   
   /* Points (view on left of screen = left part - when mirrored)
     0 nose
