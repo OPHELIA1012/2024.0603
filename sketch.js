@@ -77,7 +77,7 @@ function preload(){  //我的圖片檔
           partA = pose.keypoints[j];
           partB = pose.keypoints[j + 2];
           //line(partA.x, partA.y, partB.x, partB.y);
-        }
+        
       }
       // shoulder to shoulder
       partA = pose.keypoints[7];
@@ -91,7 +91,7 @@ function preload(){  //我的圖片檔
        
        
       }
-      /* hip to hip
+  /*hip to hip
       partA = pose.keypoints[11];
       partB = pose.keypoints[12];
       if (partA.score > 0.1 && partB.score > 0.1) {
@@ -120,9 +120,11 @@ function preload(){  //我的圖片檔
          
         }
       }
-    }
+  
+    
   */
   }
+}
   
   
   /* Points (view on left of screen = left part - when mirrored)
