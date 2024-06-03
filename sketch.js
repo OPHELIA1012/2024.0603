@@ -79,8 +79,8 @@ function preload(){  //我的圖片檔
         }
       }
       // shoulder to shoulder
-      partA = pose.keypoints[5];
-      partB = pose.keypoints[6];
+      partA = pose.keypoints[7];
+      partB = pose.keypoints[8];
       if (partA.score > 0.1 && partB.score > 0.1) {
           //line(partA.x, partA.y, partB.x, partB.y);
       push()
