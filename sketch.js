@@ -52,9 +52,7 @@ function draw() {
   translate(cam.width, 0);
   scale(-1, 1); //反向
   image(cam, 0, 0);
-  push()
-    image(windowWidth,windowHeight,150,200,140)
-  pop()
+ 
 }
 
 function drawSkeleton() {
@@ -74,6 +72,11 @@ function drawSkeleton() {
     partB = pose.keypoints[6];
     if (partA.score > 0.1 && partB.score > 0.1) {
       line(partA.x, partA.y, partB.x, partB.y);
+      push()
+        image(狗狗.gif,partA.x-75,partA.y-75,150,150)
+        image(狗狗.gif,partB.x-75,partB.y-75,150,150)
+        //print(partA.x)
+      pop()
       
     }
     // hip to hip
