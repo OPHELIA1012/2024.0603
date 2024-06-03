@@ -91,7 +91,7 @@ function preload(){  //我的圖片檔
        
        
       }
-  /*hip to hip
+  //hip to hip
       partA = pose.keypoints[11];
       partB = pose.keypoints[12];
       if (partA.score > 0.1 && partB.score > 0.1) {
@@ -122,7 +122,7 @@ function preload(){  //我的圖片檔
       }
   
     
-  */
+  
   }
 }
   
