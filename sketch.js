@@ -50,8 +50,11 @@ function draw() {
   // flip horizontal
   cam = get();
   translate(cam.width, 0);
-  scale(-1, 1);
+  scale(-1, 1); //反向
   image(cam, 0, 0);
+  push()
+    image(windowWidth,windowHeight,150,200,140)
+  pop()
 }
 
 function drawSkeleton() {
@@ -97,7 +100,7 @@ function drawSkeleton() {
     for (j = 11; j < 15; j++) {
       if (pose.keypoints[j].score > 0.1 && pose.keypoints[j + 2].score > 0.1) {
         partA = pose.keypoints[j];
-        partB = pose.keypoints[j + 2]; 
+        partB = pose.keypoints[j + 2];
         line(partA.x, partA.y, partB.x, partB.y);
         
       }
