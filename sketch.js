@@ -62,7 +62,7 @@ function preload(){  //我的圖片檔
       pose = poses[i];
       // shoulder to wrist
   
-      partA = pose.keypoints[0];
+      partA = pose.keypoints[0];}
   
       if(partA.score > 0.1){
         push()
@@ -80,8 +80,8 @@ function preload(){  //我的圖片檔
         }
       }
       // shoulder to shoulder
-      partA = pose.keypoints[5];
-      partB = pose.keypoints[6];
+      partA = pose.keypoints[7];
+      partB = pose.keypoints[8];
       if (partA.score > 0.1 && partB.score > 0.1) {
           //line(partA.x, partA.y, partB.x, partB.y);
       push()
@@ -91,7 +91,7 @@ function preload(){  //我的圖片檔
        
        
       }
-      // hip to hip
+      /* hip to hip
       partA = pose.keypoints[11];
       partB = pose.keypoints[12];
       if (partA.score > 0.1 && partB.score > 0.1) {
@@ -121,7 +121,9 @@ function preload(){  //我的圖片檔
         }
       }
     }
+  */
   }
+  
   
   /* Points (view on left of screen = left part - when mirrored)
     0 nose
@@ -141,4 +143,4 @@ function preload(){  //我的圖片檔
     14 right knee
     15 left foot
     16 right foot
-  */
+  */ 
