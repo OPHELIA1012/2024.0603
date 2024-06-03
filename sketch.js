@@ -31,6 +31,7 @@ function preload(){  //我的圖片檔
       });
     }
     requestAnimationFrame(getPoses);
+
   }
   
   async function setup() {
@@ -75,7 +76,7 @@ function preload(){  //我的圖片檔
         if (pose.keypoints[j].score > 0.1 && pose.keypoints[j + 2].score > 0.1) {
           partA = pose.keypoints[j];
           partB = pose.keypoints[j + 2];
-          line(partA.x, partA.y, partB.x, partB.y);
+          //line(partA.x, partA.y, partB.x, partB.y);
         }
       }
       // shoulder to shoulder
@@ -94,20 +95,20 @@ function preload(){  //我的圖片檔
       partA = pose.keypoints[11];
       partB = pose.keypoints[12];
       if (partA.score > 0.1 && partB.score > 0.1) {
-        line(partA.x, partA.y, partB.x, partB.y);
+        //line(partA.x, partA.y, partB.x, partB.y);
        
       }
       // shoulders to hips
       partA = pose.keypoints[5];
       partB = pose.keypoints[11];
       if (partA.score > 0.1 && partB.score > 0.1) {
-        line(partA.x, partA.y, partB.x, partB.y);
+        //line(partA.x, partA.y, partB.x, partB.y);
        
       }
       partA = pose.keypoints[6];
       partB = pose.keypoints[12];
       if (partA.score > 0.1 && partB.score > 0.1) {
-        line(partA.x, partA.y, partB.x, partB.y);
+        //line(partA.x, partA.y, partB.x, partB.y);
        
       }
       // hip to foot
@@ -115,7 +116,7 @@ function preload(){  //我的圖片檔
         if (pose.keypoints[j].score > 0.1 && pose.keypoints[j + 2].score > 0.1) {
           partA = pose.keypoints[j];
           partB = pose.keypoints[j + 2];
-          line(partA.x, partA.y, partB.x, partB.y);
+          //line(partA.x, partA.y, partB.x, partB.y);
          
         }
       }
@@ -136,7 +137,7 @@ function preload(){  //我的圖片檔
     10 right wrist
     11 left hip
     12 right hip
-    13 left kneee
+    13 left knee
     14 right knee
     15 left foot
     16 right foot
