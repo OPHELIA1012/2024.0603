@@ -1,5 +1,5 @@
 function preload(){  //我的圖片檔
-  dogImg= loadImage("狗狗.gif")
+  dogImg = loadImage("狗狗.gif")
   }
   
   let video, bodypose, pose, keypoint, detector;
